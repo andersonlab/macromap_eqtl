@@ -1,0 +1,109 @@
+﻿Tissue,UBERON,Donors_geno_RNA,Donors_RNA,eGenes,eGenes_total_expressed,sGenes,sGenes_total_expressed
+Adipose - Subcutaneous,2190,581,663,15607,0.54,5113,0.18
+Adipose - Visceral (Omentum),10414,469,541,12482,0.43,4210,0.15
+Adrenal Gland,2369,233,258,8123,0.29,2369,0.08
+Artery - Aorta,1496,387,432,12493,0.45,3740,0.13
+Artery - Coronary,1621,213,240,6296,0.22,2140,0.08
+Artery - Tibial,7610,584,663,15008,0.55,4791,0.18
+Bladder,1255,21,21,null,0,null,0
+Brain - Amygdala,1876,129,152,3726,0.13,892,0.03
+Brain - Anterior cingulate cortex (BA24),9835,147,176,5640,0.2,1238,0.04
+Brain - Caudate (basal ganglia),1873,194,246,8362,0.29,1809,0.06
+Brain - Cerebellar Hemisphere,2037,175,215,10027,0.34,2397,0.08
+Brain - Cerebellum,2037,209,241,11240,0.37,2786,0.09
+Brain - Cortex,1870,205,255,9082,0.31,2048,0.07
+Brain - Frontal Cortex (BA9),9834,175,209,7335,0.25,1684,0.06
+Brain - Hippocampus,1954,165,197,5517,0.19,1185,0.04
+Brain - Hypothalamus,1898,170,202,5499,0.19,1414,0.05
+Brain - Nucleus accumbens (basal ganglia),1882,202,246,8198,0.28,1881,0.06
+Brain - Putamen (basal ganglia),1874,170,205,6902,0.24,1350,0.05
+Brain - Spinal cord (cervical c-1),6469,126,159,4483,0.16,1144,0.04
+Brain - Substantia nigra,2038,114,139,3301,0.12,814,0.03
+Breast - Mammary Tissue,8367,396,459,10872,0.37,4124,0.14
+Cells - Transformed fibroblasts,EFO_0002009,483,504,15219,0.58,4586,0.17
+Cells - EBV-transformed lymphocytes,EFO_0000572,147,174,4934,0.18,2360,0.08
+Cervix - Ectocervix,12249,9,9,null,0,null,0
+Cervix - Endocervix,458,10,10,null,0,null,0
+Colon - Sigmoid,1159,318,373,10550,0.37,3269,0.11
+Colon - Transverse,1157,368,406,11686,0.4,3459,0.12
+Esophagus - Gastroesophageal Junction,4550,330,375,10534,0.37,3286,0.12
+Esophagus - Mucosa,6920,497,555,14675,0.52,3986,0.14
+Esophagus - Muscularis,4648,465,515,14110,0.5,4088,0.15
+Fallopian Tube,3889,8,9,null,0,null,0
+Heart - Atrial Appendage,6631,372,429,10991,0.4,3055,0.11
+Heart - Left Ventricle,6566,386,432,9642,0.37,2357,0.09
+Kidney - Cortex,1225,73,85,1260,0.04,547,0.02
+Kidney - Medulla,1293,4,4,Not Available,NaN,Not Available,NaN
+Liver,1114,208,226,5734,0.22,1485,0.06
+Lung,8952,515,578,14113,0.47,4774,0.16
+Minor Salivary Gland,6330,144,162,4836,0.16,1648,0.05
+Muscle - Skeletal,11907,706,803,13532,0.53,4056,0.16
+Nerve - Tibial,1323,532,619,17285,0.57,5297,0.18
+Ovary,992,167,180,5542,0.19,1998,0.07
+Pancreas,1150,305,328,9660,0.35,2250,0.08
+Pituitary,7,237,283,9146,0.29,2901,0.09
+Prostate,2367,221,245,7356,0.24,2463,0.08
+Skin - Not Sun Exposed (Suprapubic),36149,517,604,15483,0.52,4652,0.16
+Skin - Sun Exposed (Lower leg),4264,605,701,16967,0.57,5134,0.17
+Small Intestine - Terminal Ileum,1211,174,187,6681,0.22,2084,0.07
+Spleen,2106,227,241,10783,0.36,2837,0.1
+Stomach,945,324,359,8771,0.31,2638,0.09
+Testis,473,322,361,18795,0.47,8626,0.21
+Thyroid,2046,574,653,17684,0.59,5358,0.18
+Uterus,995,129,142,3577,0.12,1524,0.05
+Vagina,996,141,156,3730,0.13,1460,0.05
+Whole Blood,13756,670,755,12360,0.51,3013,0.12
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,
+,,,,,,,

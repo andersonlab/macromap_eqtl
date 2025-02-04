@@ -1,0 +1,16 @@
+#Colocalisation
+general_path: "/nfs/users/nfs_n/np12/myscratch/MacroMap/Analysis/Coloc_analysis/Macromap_fds/coloc_v2/MacroMap"
+coloc_output: "/nfs/users/nfs_n/np12/myscratch/MacroMap/Analysis/Coloc_analysis/Macromap_fds/coloc_v2/MacroMap/coloc_out"
+coloc_phenotypes: ["featureCounts"]
+coloc_window: 2e6
+gwas_dir: "/nfs/users/nfs_n/np12/myscratch/MacroMap/Data/GWAS/GWAS_catalogJuly20/All_files/4.Blood_related_diseases_traits/myformat/"
+gwas_traits: ["DBP","SBP"]
+
+gwas_list: "/nfs/users/nfs_n/np12/myscratch/MacroMap/Data/GWAS/GWAS_catalogJuly20/All_files/4.Blood_related_diseases_traits/myformat/4.Blood_related_diseases_traits_gwas_files.txt"
+gwas_var_info: "/nfs/users/nfs_n/np12/myscratch/MacroMap/Data/Genotypes/vcf_hipsci_hg38/DS_Filt_M/chr_position_ID_major_minor_MAF_v37v2.txt.gz"
+qtl_var_info: "/nfs/users/nfs_n/np12/myscratch/MacroMap/Data/Genotypes/vcf_hipsci_hg38/DS_Filt_M/chr_position_ID_major_minor_MAF.txt.gz"
+chunks: ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"]
+
+complete_run: ["MacroMap.myformat.4"]
+#conditions: ["IFNG_6"]
+conditions: ["CIL_24","Ctrl_6","IFNB_6","IFNG_6","IL4_6","LIL10_6","MBP_6","P3C_6","PIC_6","Prec_D0","R848_24","sLPS_24","CIL_6","Ctrl_24","IFNB_24","IFNG_24","IL4_24","LIL10_24","MBP_24","P3C_24","PIC_24","Prec_D2","R848_6","sLPS_6"]

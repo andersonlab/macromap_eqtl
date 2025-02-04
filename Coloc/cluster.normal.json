@@ -1,0 +1,13 @@
+{
+    "run_coloc" :
+    {
+        "queue"     : "normal",
+        "cores"     : "1",
+        "memory"    : 15000,
+        "resources" : "\"select[mem>15000] rusage[mem=15000] span[hosts=1]\"",
+        "name"      : "{wildcards.gwas}_{rule}",
+        "output"    : "./FarmOut/{wildcards.gwas}_{wildcards.conditions}_chunk{wildcards.chunks}.out",
+        "error"     : "./FarmOut/{wildcards.gwas}_{wildcards.conditions}_chunk{wildcards.chunks}.err",
+        "select_queue" :"modern_hardware"
+    }
+}

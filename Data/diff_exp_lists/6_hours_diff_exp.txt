@@ -1,0 +1,10 @@
+Ctrl_vs_CIL	5427
+Ctrl_vs_IFNB	3409
+Ctrl_vs_IFNG	2395
+Ctrl_vs_IL4	810
+Ctrl_vs_LIL10	3831
+Ctrl_vs_MBP	801
+Ctrl_vs_P3C	2461
+Ctrl_vs_PIC	1240
+Ctrl_vs_R848	2369
+Ctrl_vs_sLPS	4217

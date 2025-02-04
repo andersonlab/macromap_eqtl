@@ -1,0 +1,67 @@
+# eQTL pipeline
+1. create directories  path /nfs/users/nfs_n/np12/myscratch/MacroMap/Analysis/eQTLs/Macromap_fds
+sh scripts/create_dir_out.sh
+
+2. Create expression files
+sh scripts/run_create_exp.sh
+
+3. Create PCA covariates
+sh scripts/run_pca.sh
+bash scripts/create_pca_covariates.sh
+
+4. run eQTL analysis # open screen session because there is a submission limit
+sh scripts/run_eQTL_Gene.sh
+
+5. Check eQTL run
+sh scripts/check_eQTL_run.sh > split_commands/check_commands
+split -l 30 -d  split_commands/check_commands split_commands/check_commands.
+cd  split_commands
+for i in check_commands.*; do echo bsub -e log/$i.err -o log/$i.out  -R "\"select[mem>2000] rusage[mem=2000]"\" -M 2000 sh $i ; done |sh
+rm check_commands.*
+
+6. Merge output of eQTL mapping
+sh scripts/merge_eQTLs_Gene.sh >split_commands/merge_commands
+cd  split_commands
+split -l 30 -d  merge_commands merge_commands.
+for i in merge_commands.*; do echo bsub -e log/$i.err -o log/$i.out  -R "\"select[mem>2000] rusage[mem=2000]"\" -M 2000 sh $i ; done |sh
+
+7. Significant results
+sh scripts/run_sign_results_eQTLs.sh 0.05 >split_commands/significant_commands_0.05
+#sh scripts/run_sign_results_eQTLs.sh 0.10 >split_commands/significant_commands_0.10
+
+split -l 30 -d  split_commands/significant_commands_0.05 split_commands/significant_commands_0.05.
+split -l 30 -d  split_commands/significant_commands_0.10 split_commands/significant_commands_0.10.
+
+for i in significant_commands_0.*.*; do echo bsub -e log/$i.err -o log/$i.out  -R "\"select[mem>2000] rusage[mem=2000]"\" -M 2000 sh $i ; done |sh
+
+8. Create sym links
+sh scripts/create_sym_links_results.sh
+
+9. create plot eQTLs
+# This needs all the TSSs otherwise I need to change the Rscript
+sh  scripts/create_plots_eQTLs.sh
+
+10. run calculate std err best snp
+sh scripts/run_calculate_stderr_best_snp_per_gene.sh
+
+11. Gene nominals
+for i in  */analysis/1MB/; do echo mkdir -p $i\GENE_NOMINAL/log; done |sh
+sh scripts/run_eQTL_Gene_nominal.sh |sh
+
+12. check gene nominals
+for i in  */analysis/1MB/GENE_NOMINAL/log/*.out; do grep "completed" $i; done  |wc -l
+
+13. Merge gene nominals  # The nominal file have different number of tests. I need to check why
+sh scripts/merge_eQTLs_Gene_nominal.sh
+
+13. std err nominal
+sh scripts/run_calculate_stderr_nominal.sh
+
+14.Convert to fst Rfiles
+for i in  */analysis/1MB/GENE_NOMINAL/*_all.stderr.txt.gz ; do b=$(basename $i); echo bsub -e log/$b.convert.err -o log/$b.convert.out  -R "\"select[mem>40000] rusage[mem=40000]"\" -M 40000  Rscript scripts/convert_to_fst.R $i; done
+
+15. targz log files
+sh scripts/targz_inter_files.sh >split_commands/targz_commands
+cd  split_commands
+split -l 100 -d  -a 3 targz_commands targz_commands.
+for i in split_commands/targz_commands.*;do  e=$(basename $i);echo bsub -e log/$e.err -o log/$e.out  -R "\"select[mem>2000] rusage[mem=2000]"\" -M 2000 sh $i ; done |sh

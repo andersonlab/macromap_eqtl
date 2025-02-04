@@ -1,0 +1,4 @@
+# Need to change the path to coloc config files
+bash scripts/submit_snakemake_v3_gwasN.sh scripts/run_coloc_MacroMap_gwasN.snakefile scripts/coloc_config_MacroMap_gwasN.yaml scripts/cluster.normal.json dry 44889 EPIL
+bash scripts/submit_snakemake_v3_gwasN.sh scripts/run_coloc_MacroMap_gwasN.snakefile scripts/coloc_config_MacroMap_gwasN.yaml scripts/cluster.normal.json dry 110361 ALGAST
+bash scripts/submit_snakemake_v3_gwasN.sh scripts/run_coloc_MacroMap_gwasN.snakefile scripts/coloc_config_MacroMap_gwasN_SSC.yaml scripts/cluster.normal.json dry 426679 SSC
